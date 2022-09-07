@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cita medicas</title>
+</head>
+<body>
+    <form id="form" method="post" action="./backend/receive.php">
+        <label for="name">Nombre del paciente:</label>
+    <input type="text"
+    id="name"
+    name="name"
+    value=""
+    placeholder="Nombre del paciente"
+    ninlength="3"
+    maxlength="50"
+    pattern="[a-zA-z]{3,20}"
+    title="Se admiten solo letras"
+    autocomplete="off"
+    required
+    > 
+    <label for="age">Edad:</label>
+        <input type="number" min="1" max="99" id="age"><br><br>
+        <label for="phone">Número de telefono</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-45-6789"><br><br>
+        <label for="mail">Correo electrónico:</label>
+        <input type="email" id="mail" placeholder="Email"><br><br>
+        <label for="pss">Contraseña:</label>
+        <input type="password" id="pss"> <br><br>
+        <label for="mes">Seleccionar fecha:</label>
+        <input type="month" id="mes"><br><br>
+        <datalist id="meses">
+            <option value="Enero">
+            <option vallue="Febrero">
+        </datalist>
+        <fieldset><legend>Genero:</legend>
+            <input type="radio" name="estado" value="Hombre">Hombre
+            <input type="radio" name="estado" value="Mujer">Mujer
+            <input type="radio" name="estado" value="Ninguno">Ninguno
+        </fieldset>
+
+                <label for="Departamento">Departamento:</label>
+        <select name="Departamento">
+            <optgroup label="">
+                <option></option>
+                <option>Antioquia</option>
+                <option>Atlántico</option>
+                <option>Bolívar</option>
+                <option>Boyacá</option>
+                <option>cesar</option>
+                <option>córdoba</option>
+                <option>Cundinamarca</option>
+                <option>Magdalena</option>
+                <option>Santander</option>
+                <option>Valle del Cauca</option>    
+            </optgroup>
+        </select><br><br>
+
+        <label for="Sintomas">Sintomas:</label>
+        <select name="Sintomas">
+            <optgroup label="">
+                <option></option>
+                <option>Dolor de cabeza</option>
+                <option>Rigidez de cuello</option>
+                <option>Fiebre o escalofríos</option>
+                <option>Confusión</option>
+                <option>Dificultaad para respirar</option>
+                <option>Sensibilidad a las luces</option>
+                <option>Dolor de oído</option>
+                <option>Tos seca</option>
+                <option>Dolor de pecho</option>
+                <option>dolor de gargaanta</option>    
+            </optgroup>
+            
+        </select><br><br>
+        <label for="condiciones">¿Acepta terminos y condiciones?</label>
+        <input type="checkbox" id="condiciones"><br>
+        <hr>
+        <input type="button" id="boton" value="Aceptar">
+        <button type="button" id="boton2">Validar</button><br><hr>
+        <button type="submit" id="enviar">Realizar cita</button><br><hr>
+
+        <label for="oculto">2022. Formulario de citas en linea.</label>
+        <input type="hidden" id="oculto"><br><br>
+
+    </form>
+
+</body>
+</html>

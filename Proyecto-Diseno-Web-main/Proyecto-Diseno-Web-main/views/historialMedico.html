@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<br lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Historial medico</title>
+</head>
+<br>
+    <div>Información Médica</div><br>
+  <br id="form">
+
+
+    <label for="tipo de sangre">Tipo de sangre:</label>
+    <input type="text"
+    minlength="1"
+    maxlength="3" 
+    pattern="[a-b-o]"
+    title= "solo se admite un signo">&nbsp;&nbsp;
+
+    <label for="Fecha">Fecha:</label>
+
+    <input type="date"  value ="2022-01-1"><br><br>
+
+    <label for="name">Nombre del paciente</label>
+    <input type="text"
+    id="name"
+    name="name"
+    value=""
+    placeholder="Nombre del paciente:" 
+    minlength="3"
+    maxlength="50"
+    pattern="[a-zA-Z]  { 3-20 }"
+    title= "se admiten solo letras"
+    autocomplete="off"
+    required
+    >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="Apellido">Apellidos(s):</label>
+    <input type="text"
+    id="Apellido"
+    Apellido="Apellido"
+    value=""
+    placeholder="Apellido(s)" 
+    minlength="3"
+    maxlength="50"
+    pattern="[a-zA-Z]  { 3,20 }"
+    title= "se admiten solo letras"
+    autocomplete="off"
+    required
+    >&nbsp;&nbsp;
+    <label for="age">Edad:</label>
+    <input type="number" min="1" max="99" id="age">&nbsp;&nbsp;
+    <label for="Date of Birth:">Fecha de nacimiento:</label>
+    <input type="date"  value ="">&nbsp;&nbsp;
+    <label for="city of birth">Lugar de nacimiento:</label>
+     <select id="city" name="city">
+        <option value="">Bogota</option>
+         <option value="">Cali</option>
+         <option value="">Medellin</option>
+         <option value="">Bucaramanga</option>
+          <option value="">Barrancabermeja</option>
+          <option value="">Santa Marta</option>
+          <option value="">Santa Marta</option>
+          <option value="">Funza</option>
+
+     </select><br></br>&nbsp;&nbsp;
+    <label for="Sexo:">Sexo:</label>
+    <input type="radio" id="sexo" name="sexo" value="m"/>Masculino
+    <input type="radio" id="sexo" name="sexo" value="f"/>Femenino &nbsp;&nbsp;
+    <label for="identificación:">Identificación:</label>
+    <input type="radio" id="identificación" name="identificación"value="Ti"/>Ti
+    <input type="radio" id="identificación" name="identificación"value="Cc"/>Cc 
+    <input type="identificacion" id="Ti/Cc"
+    
+    minlength="1"
+    maxlength="11"
+    pattern="{ 1-10 }"
+    title= "Numero de identificacion del tutor si es menor de edad "
+    autocomplete="off"
+    required
+    >
+    <label for="name">Celular:</label>
+    <input type="text"
+    id="Celular"
+    Celular="Celular"
+    value=""
+ 
+    minlength="1"
+    maxlength="10"
+    pattern="{ 1-10 }"
+    title= "se admiten solo numeros "
+    autocomplete="off"
+    required
+    >&nbsp;&nbsp;
+
+    <label for="home">Domicilio:</label>
+    <input type="text"
+    ><br><br>&nbsp;&nbsp;
+    <label for="allergies">¿Usted tiene alguna alergia a algun alimento o medicamento?:</label>
+    <input type="radio" id="Alergias" name="allergies" value="si"/>Si &nbsp;
+    <input type="radio" id="Alergias" name="allergies" value="si"/>No &nbsp;&nbsp;&nbsp;<br></br>
+    <label for="allergies">¿A cual?</label>
+    <input type="text"><br><br/>
+    <label for="height">¿Cual es su estatura?:</label>
+    <input type="text"><br><br/>
+    <label for="Weight">¿Cual es su peso?:</label>
+    <input type="text"><br><br/>
+
+    <label for="medicines"> ¿Habitualmento toma algun medicamento?:</label>
+    <input type="radio" id="Alergias" name="allergies" value="si"/>Si &nbsp;
+    <input type="radio" id="Alergias" name="allergies" value="si"/>No &nbsp;&nbsp;&nbsp;<br></br>
+    <label for="medicines">¿cual?</label>
+    <input type="text"
+     title= "solo llenar si tiene alguna alergia el medicamento y solo se permiten letras"><br>
+     <label for="diseases">¿Usted padece de alguna enfermedad?:</label>
+    <select name="Enfermedades"multiple>
+    <option > Diabetes</option>
+    <option select>Clamidia</option>
+    <option >Anemia</option>
+    <option >Hepatitis</option>
+    <option >obesidad</option>
+    <option >Cancer</option>
+    <option >Asma</option>
+    </select><br></br>
+     
+     <label for="medicines">Otra enfermedad::</label>
+     <input type="otras"
+     id="otras"><br></br>
+     
+
+     <label for="discapacidad">¿Tiene usted alguna discapacidad?:</label>
+     <input type="radio" id="Discapacidad" name="Discapacidad" value="si"/>Si &nbsp;
+    <input type="radio" id="Alergias" name="Discapacidad" value="si"/>No &nbsp;&nbsp;<br></br>
+    <label for="discapacidad">Alguna observación sobre su salud:</label>
+    <input type="text"><br></br>
+    
+    <button type="submit" id="enviar" >Enviar datos</button>
+
+
+
+
+
+  </form>
+ 
+</body>
+</html>

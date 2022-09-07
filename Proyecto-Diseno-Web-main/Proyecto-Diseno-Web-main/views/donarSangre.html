@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donar Sangre</title>
+</head>
+<body>
+    <header>
+        <h1>Donación de Sangre</h1>
+        <h2>Conoce todo lo relacionado a la donación de sangre AQUÍ</h2>
+    </header>
+    <main>
+        <section id="requisitos">
+            <h2>Requisitos para ser donante</h2>
+            <li>Ser mayor de 18 años y menor de 65</li>
+            <li>Portar documento de identidad</li>
+            <li>Pesar más de 50 kilos</li>
+            <li>No haber padecido de enfermedades de transmisión sexual o sospechar ser portador de alguna</li>
+            <li>No haber padecido de cáncer, ni tener enfermedades del corazón o los pulmones</li>
+            <li>No haber sido sometido a cirugías, transfusiones, tatuajes o piercing en los últimos 12 meses</li>
+            <li>No haber sido sometido a tratamientos odontológicos en los últimos 7 días</li>
+            <li>No padecer de infecciones o estar en tratamiento con antibióticos, antiparasitarios o antivirales</li>
+            <li>No estar en ayunas</li>
+            <li>Pasar un pequeño reconocimiento médico que incluye: toma de tensión arterial, determinación de nivel de hemoglobina, verificación del peso, cuestionario con preguntas de salud</li>
+        </section>
+        <section>
+            <article>
+                <h2>¿A quiénes van nuestras donaciones?</h2>
+                <h3>Tenemos alianzas tanto en el sector público como en el privado con las instituciones prestadoras de servicios de salud con mayor demanda de donaciones de sangre</h3>
+                <h3>Sector privado</h3>
+                <li>Fundación Cardio Infantil</li>
+                <li>Hospital Universitario San Ignacio</li>
+                <li>Instituto Nacional de Cancerología - ESE</li>
+                <li>Fundación Hospital de la Misericordia</li>
+                <h3>Sector público</h3>
+                <li>Unidad de Servicios de Salud Occidente Kennedy</li>
+                <li>El Tunal</li>
+                <li>Simón Bolívar</li>
+                <li>Hospital Santa Clara – ESE</li>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>¡Envíanos tus datos si estás interesado en ser donante!</h2>
+                <form id="form">
+                    <label for="name">Nombre</label>
+                    <input type="text"><br>
+                    <label for="name">Apellido</label>
+                    <input type="text"><br>
+                    <label for="age">Edad</label>
+                    <input type="number" min="18" max="65" id="age"><br>
+                    <label for="document">Número de C.C</label>
+                    <input type="number"><br>
+                    <label for="mail">Correo electrónico</label>
+                    <input type="email" id="mail"><br>
+                    <label type="date">Reserva tu cita</label>
+                    <input type="date"><br>
+                    <input type="button" id="boton" value="Aceptar">
+                    <button type="button" id="boton2">Validar</button>
+                    <button type="submit" id="enviar">Enviar datos</button>
+                </form>
+            </article>
+        </section>
+        <script src="./scripts/main.js"></script>
+    </main>
+    <footer>
+        <h5>Fuentes consultadas: MinSalud</h5>
+    </footer>
+</body>
+</html>
