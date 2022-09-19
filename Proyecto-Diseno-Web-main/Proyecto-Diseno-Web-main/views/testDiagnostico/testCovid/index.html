@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Covid</title>
+</head>
+<body>
+    <h1>Test Covid-19</h1>
+    <p>En este espacio encontrará un test para saber si presenta los sintomas de Covid-19.</p>
+    <h2>¿Qué es la Covid-19?</h2>
+    <p>La COVID-19 es la enfermedad causada por el nuevo coronavirus conocido como SARS-CoV-2. La OMS tuvo noticia por primera vez de la existencia de este nuevo virus el 31 de diciembre de 2019, al ser informada de un grupo de casos de «neumonía vírica» que se habían declarado en Wuhan (República Popular China).</p>
+    <p>Fuente: Organización Mundial de la Salud (OMS).</p>
+    <h1>Test</h1>
+    <form>
+        <h2>Síntomas habituales</h2>
+        <fieldset><legend>¿Ha presentado fiebre en los últimos 5 días?</legend>
+            <input type="radio" name="fiebre" value="Si">Si
+            <input type="radio" name="fiebre" value="No">No
+        </fieldset> <br>
+        <fieldset><legend>¿Ha presentado tos en los últimos 5 días?</legend>
+            <input type="radio" name="tos" value="Si">Si
+            <input type="radio" name="tos" value="No">No
+        </fieldset> <br>
+        <fieldset><legend>¿Se ha sentido cansado en los últimos 5 días?</legend>
+            <input type="radio" name="cansancio" value="Si">Si
+            <input type="radio" name="cansancio" value="No">No
+        </fieldset> <br>
+        <fieldset><legend>¿Ha perdido el gusto en los últimos 5 días?</legend>
+            <input type="radio" name="gusto" value="Si">Si
+            <input type="radio" name="gusto" value="No">No
+        </fieldset> <br>
+        <fieldset><legend>¿Ha perdido el olfato en los últimos 5 días?</legend>
+            <input type="radio" name="olfato" value="Si">Si
+            <input type="radio" name="olfato" value="No">No
+        </fieldset> <br>
+
+        <h2>Síntomas menos habituales</h2> <br>
+        <fieldset><legend>¿Ha presentado dolor de garganta,dolor de cabeza, molestias, dolores, diarrea, ojos rojos o irritados en los ultimos 5 días?</legend>
+            <input type="radio" name="SMH" value="Si">Si
+            <input type="radio" name="SMH" value="No">No
+        </fieldset> <br>
+
+        <h2>Síntomas serios</h2>
+        <fieldset><legend>Presenta dificultad para respirar o disnea, dolor en el pecho, pérdida de movilidad, del habla o sensación de confusión</legend>
+            <input type="radio" name="SMH" value="Si">Si
+            <input type="radio" name="SMH" value="No">No
+        </fieldset>
+        <input type="button" id="boton" value="Aceptar">
+        <button type="button" id="boton2">Validar</button>
+        <button type="submit" id="enviar">Enviar</button>    
+    </form>
+</body>
+</html>
