@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-    <h1>Clinica MedSalud</h1>
-    <button>Iniciar secion</button>
-    <button>Registrarse</button><br><br><br>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Home</title>
 </head>
+
 <body>
-    <button>Citas medicas</button><br>
-    <button>Situaciones de emergencia</button><br>
-    <button>Historial medico</button><br>
-    <button>Donar sangre</button><br>
-    <button>Test-Diagnostico</button>
+  <header>
+    <h1>Clínica MedSalud</h1>
+    <div>Iniciar Sesión</div>
+    <div>Regístrate</div>
+  </header>
+  <main>
+    <section class="flex-container">
+      <div href="./views/citasMedicas.html">Citas Médicas</div>
+      <div href="./views/donacionSangre.html">Donación de Sangre</div>
+      <div href="./views/historialMedico.html">Historial Médico</div>
+      <div href="./views/situacionesEmergencia.html">Situaciones de Emergencia</div>
+      <div href="./views/testDiagnostico.html">Test Diagnóstico</div>
+    </section>
+  </main>
+  <footer>
+    <div>Redes Sociales</div>
+    <div>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/9fd1a302e2.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,0 +1,38 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family:'Poppins', sans-serif; 
+    font-size: 13px;
+    text-align: left;
+    line-height: 2;
+    writing-mode: horizontal-tb;
+
+}
+
+.box1{
+    margin:0;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    color: white;
+    background-color:rgba(63, 141, 175, 1);
+    border:auto solid white;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif; 
+    text-align: center;
+    font-size: 80px;
+    position: relative;
+    top: -7px;
+    
+}
+
+.body{
+    background-color:rgba(255, 255, 255, 1) ;
+}
+.text{
+
+    font-family:'Poppins', sans-serif; 
+    font-size: 15px;
+    line-height: 2;
+}
+
