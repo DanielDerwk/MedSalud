@@ -1,19 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Diagnostico</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/stylessTestDiagnostico.css">
+  <title>Test Diagnostico</title>
 </head>
+
 <body>
-    <h1>Tests Diagnosticos</h1>
-    <p>En este espacio encontrará tests para saber su estado de salud.</p>
-    <ul>
-        <li><a href="../testCovid/index.html">Test de la covid-19.</a></li>
-        <li><a href="../testVirueladelMono/index.html">Test de la viruela símica.</a></li>
-        <li><a href="../testGripe/index.html">Test de gripe.</a></li>
-        <li><a href="../testIntoxicacion/index.html">Test de intoxicación por alimentos.</a></li>
-    </ul>
+  <header>
+    <h1 class="title">Clínica MedSalud</h1>
+    <nav class="nav1">
+      <ul class="nav">
+        <li><a href=""><i class="fa-solid fa-user "></i></a>
+          <ul>
+            <li><a href="">Iniciar Sesion</a></li>
+            <li><a href="">Registrarse</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <hr>
+    <nav class="flex-container">
+      <ul>
+        <li><a>Inicio</a></li>
+        <li><a>La clinica</a></li>
+        <li><a>Noticias</a></li>
+        <li><a>Situaciones de Emergencia</a></li>
+        <li><a href="../views/testDiagnostico.html">Test Diagnóstico</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class="testDiagnostico">Tests Diagnósticos</h1>
+    <p><strong>En este espacio encontrará tests para saber su estado de salud. </strong></p>
+    <section class="flexcontainer">
+      <div><a class="a" href="../views/testCovid.html"><img class="img" src="../assets/img/covid.png" width="100%">
+          <div class="texto1">Test de la covid-19.</div>
+        </a></div>
+      <div><a class="a" href="../views/testDiagnostico/testVirueladelMono.html"><img class="img"
+            src="../assets/img/monkey.png" width="100%">
+          <div class="texto1">Test de la viruela símica.</div>
+        </a></div>
+      <div><a class="a" href="../views/testDiagnostico/testGripe.html"><img class="img" src="../assets/img/gripe.png"
+            width="100">
+          <div class="texto1">Test de gripe.</div>
+        </a></div>
+      <div><a class="a" href="../views/testDiagnostico/testIntoxicacion.html"><img class="img"
+            src="../assets/img/stomach ache.jpg" width="100%">
+          <div class="texto1">Test de intoxicación por alimentos. </div>
+        </a></div>
+    </section>
+    <aside></aside>
+  </main>
+  <footer></footer>
 </body>
+<script src="https://kit.fontawesome.com/9fd1a302e2.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/c7e1a938a5.js" crossorigin="anonymous"></script>
+
 </html>

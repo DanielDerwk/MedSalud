@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+*{
+    font-family: 'Titillium Web', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+body{
+    height: 100%;
+    background: linear-gradient(rgba(15, 26, 55, 0.75), rgba(13, 19, 34, 0.75)),url(../assets/img/pexels-chokniti-khongchum-3082451.jpg) no-repeat center center fixed;
+    background-size:cover;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #DEDAD7;
+}
+.title{
+  display: flex;/*tratamos el elemento como elemento en bloque*/
+  align-items: center;
+  justify-content: center;/*centrar horizontalmente texto con flex*/
+  margin: 1vh;
+  padding: 1vh 12vw;
+  font-size: calc(4vw+ 1vh);
+  height: 10vh;
+  color: #171716;
+  text-transform: uppercase;/*Convierte todas las letras en mayuscula*/
+  transition: 0.1s;
+}
+header .nav1 {
+  width: 0; /*elminar el tamaño del nav*/
+}
+header .nav li{
+  position: relative;
+  right: 10vw;
+}
+.fa-user{ /*icon usuario*/
+  font-size: 2.6vw;
+}
+ul, ol{
+  list-style: none; /*borra lo signos de la lista*/
+}
+
+.nav li a{
+  width: 4.4vw;
+  height: 4.4vw;
+  background-color: #AF98C4;
+  border-radius: 50%;
+  color: #F8F4F1;
+  text-decoration: none;/*elimina el subrayado*/
+  display: flex;/*tratamos el elemento como elemento en bloque*/
+  align-items: center;
+  justify-content: center;/*centrar horizontalmente texto con flex*/
+}
+.nav li a:hover{/*cambial el color al pasar el mouse*/
+  background-color: #C4A3C1;
+}
+.nav>li{
+  float: left;/*pega el elemento a la derecha*/
+}
+.nav li ul{
+  display: none; /*desaparece el menu*/
+  position: absolute;
+}
+.nav li ul li a{
+  display: block;
+  border-radius: 10px;
+  background-color: #AF98C4;
+  font-size: 1.8vw;
+  width: 12vw;
+  height: 3.8vw;
+  position: relative;
+  text-align: center;
+  padding: 0.5vw 0;
+  margin: 0.1vw;
+}
+.nav li:hover>ul{/*posicionar el sub-menu y hacer que aparezca */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 15vw;
+  bottom: -1.8vw;
+}
+
+hr{
+  height: 1px;
+  width: 76%;
+  background-color: black;
+  border: none;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+.flex-container{
+    display: flex;
+    justify-content: center;/*alinea en el centro horizontalmente */
+    margin: 1vw 0;
+}
+.flex-container ul{
+    display: flex;/*los convierte en fila*/
+}
+.flex-container ul li a{
+    letter-spacing: 0.6px;
+    transition: 0.7s;
+    padding: 0vh 1.5vw;
+    font-size: 1.6vw;
+    text-decoration: none;
+    color: #171716;
+}
+
+.text1{
+  width: 100%;
+  height: auto;
+  padding: 0vw;
+  text-align: center;
+  font-size: 4vw;
+  position: relative;
+  background-color: #AF98C4;
+
+}
+.parrafo1{
+  text-align: center;
+  height: auto;
+  padding: 0vw;
+  font-size: 2vw;
+  background-color: #C4A3C1;
+  color: white;
+  
+}
+.subtitulo1{
+  font-size: 3vw;
+}
+.text2{
+  margin: 3vh 12vw;
+  background: #AF98C4;
+  border-radius: 10px;
+  text-align: justify;
+  text-align: center;
+  padding: 1vw;
+  font-size: 1.4vw;
+}
+
+.text3{
+  font-size: 4vw;
+  text-align: center;
+}
+.sintomas{
+  font-size: 2.5vw;
+  text-align: center;
+  background-color: #C4A3C1;
+}
+
+.form{
+  margin: 3vh 12vw;
+  background: #C4A3C1;
+  border-radius: 10px;
+  text-align: justify;
+  padding: 1vw;
+}
+.div1{
+  display: flex;
+  flex-direction: column;
+}
+.div2{
+  display: flex;
+  margin: 0vw 0.5vh ;
+}
+.container {
+  display: flex;
+  position: relative;
+  padding-left: 2vw;
+  margin-bottom: 12px;
+  font-size: 1.39vw;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  display: flex;
+  position: absolute;
+  top: 0.35vh;
+  left: 0;
+  height: 1.8vw;
+  width: 1.8vw;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.legend{
+  font-size: 1.6vw;    
+}
+.lt{
+  background-color: #AF98C4;
+}

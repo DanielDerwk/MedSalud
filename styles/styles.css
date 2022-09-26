@@ -1,28 +1,266 @@
-/*
-#315770
-#B3D9F2
-#6ABAF0
-#536570
-#5392BD
-*/
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
 *{
-    font-family: 'Poppins', sans-serif;
-    background-color: #B3D9F2;
+    font-family: 'Titillium Web', sans-serif;
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #F7F3F0;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.title{
+    display: flex;/*tratamos el elemento como elemento en bloque*/
+    align-items: center;
+    justify-content: center;/*centrar horizontalmente texto con flex*/
+    margin: 1vh;
+    padding: 1vh 12vw;
+    font-size: calc(4vw+ 1vh);
+    height: 10vh;
+    color: #171716;
+    text-transform: uppercase;/*Convierte todas las letras en mayuscula*/
+    transition: 0.1s;
+}
+header .nav1 {
+    width: 0; /*elminar el tamaño del nav*/
+}
+header .nav li{
+    position: relative;
+    right: 10vw;
+}
+.fa-user{ /*icon usuario*/
+    font-size: 2vw;
+}
+ul, ol{
+    list-style: none; /*borra lo signos de la lista*/
+}
+
+.nav li a{
+    width: 4vw;
+    height: 4vw;
+    background-color: #AF98C4;
+    border-radius: 50%;
+    color: #F8F4F1;
+    text-decoration: none;/*elimina el subrayado*/
+    display: flex;/*tratamos el elemento como elemento en bloque*/
+    align-items: center;
+    justify-content: center;/*centrar horizontalmente texto con flex*/
+}
+.nav li a:hover{/*cambial el color al pasar el mouse*/
+    background-color: #C4A3C1;
+}
+.nav>li{
+    float: left;/*pega el elemento a la derecha*/
+}
+.nav li ul{
+    display: none; /*desaparece el menu*/
+    position: absolute;
+}
+.nav li ul li a{
+    display: block;
+    border-radius: 10px;
+    background-color: #AF98C4;
+    font-size: 1vw;
+    width: calc(8vw + 2vh);
+    height: calc(2vw + 0.8vh);
+    position: relative;
+    text-align: center;
+    padding: 0.5vw 0;
+    margin: 0.1vw;
+}
+.nav li:hover>ul{/*posicionar el sub-menu y hacer que aparezca */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 15vw;
+    bottom: -0.6vw;
+}
+
+hr{
+    height: 1px;
+    width: 76%;
+    background-color: black;
+    border: none;
+    margin-left: 12%;
+    margin-right: 12%;
 }
 .flex-container{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;/*alinea en el centro horizontalmente */
+    margin: 1vw 0;
 }
-.flex-container>div{
-    text-align: center;
+.flex-container ul{
+    display: flex;/*los convierte en fila*/
+}
+.flex-container ul li a{
+    letter-spacing: 0.6px;
+    transition: 0.7s;
+    padding: 0vh 1.5vw;
+    font-size: 1.6vw;
+    text-decoration: none;
+    color: #171716;
+}
+.divTitle2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(15vh+vw);
+    background-color: #AF98C4;
+    margin: 0;
+}
+.title2{
+    color: #171716;
+    text-transform: uppercase;
+    font-size: calc(3vw + 1vh);  
+
+}
+.subTitle2{
+    display: flex;
+    color: #171716;
+    font-size: calc(1vw + 1vh);
+    margin: 0 0 10px;
+}
+/*Imagen en movimiento*/
+.slider{
+    width: 100%;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    width: 200%;
+    animation: cambio 10s infinite;
+    animation-direction: alternate;
+}
+.slider li{
+    width: 100%;
+    list-style: none;/*Quitar icono de lista*/
+}
+.slider img{
+    width: 100%;
+    max-height: 30vw;
+    opacity: 80%;
+    object-fit: cover;
+}
+@keyframes cambio{
+    0% {margin-left: 0%;}
+    25% {margin-left: -0%}
+    50% {margin-left: -50%;}
+    75% {margin-left: -100%;}
+    100% {margin-left: -100%}
+}
+/*Horario de apertura*/
+.horaApertura{
     display: flex;
     align-items: center;
-    width: 200px;
-    height: 100px;
-    margin: 35px;
-    color: white;
-    font-size: 20px;
-    background-color: #315770;
-    padding: 1vh 3vw;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5vh 0;
+}
+.imagenEspera{
+    width: 30%;
+    margin: 2vh 0;
+}
+.horaApertura h2{
+    margin: 1vh 0 0;
+    font-size: calc(2.5vw + 1.5vh);
+}
+.horaApertura span{
+    margin: 3px;
+    font-size: calc(1vw + 0.5vh);
+}
+footer{
+    height: 40vw;
+    max-height: 1000px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #AF98C4;
+    padding: 1vh;
+    width: 100%;
+}
+.footerIcons{
+    display: flex;
+}
+.footerSubIcons{
+    display: flex;
+    margin: 0.5vh 1vw;
+    font-size: 2.6vw;
+}
+/*
+PAGINA DE SERVICIOS
+*/
+.serviciosMenu{
+    display: flex;
+    justify-content: center;
+}
+.serviciosSubMenu{ /*Bloque del boton*/
+    display: flex;
+    justify-content: center;
+    font-size: calc(1vw + 0.5vh);
+    margin: 1vw;
+    background-color: #AF98C4;
+    width: 28vw;
+    height: 30vw;
+    padding: 2vw;
+    border-radius: 10px;
+}
+.serviciosMenu a{ /*El link*/
+    text-decoration: none;
+}
+.serviciosMenu i { /*imagen*/
+    display: flex;
+    justify-content: center;
+    font-size: 8vw; /*tamaño de las imagenes*/
+    color: #DEDAD7;
+
+}
+.serviciosMenu h2 {
+    text-align: center;
+    margin: 0.2vw;
+    text-transform: uppercase;
+    color: #000000;
+}
+/*
+PAGINA LA CLINICA
+*/
+.flex-clinica{/*Flex de todo el bloque*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #AF98C4;
+    margin: 1vh 0 0;
+}
+.flex-subClinica{/*Flex para los 2 parrafos*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.flex-clinica h1{
+    padding: 4vh 0 0;
+    font-size: calc(3vw + 2vh);
+    text-transform: uppercase;
+}
+.flex-clinica>p{
+    font-size:calc(1vw + 1vh);
+}
+.flex-subClinica p{
+    margin: 1vh;
+    text-align: center;
+    width: 70%;
+    height: auto;
+    line-height: 1.8em;
+    font-size:calc(0.8vw + 0.8vh);
+}
+.clinicaImg{
+    width: 100%;
 }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/stylessCovid.css">
+    <title>Test Covid</title>
+</head>
+<body>
+    <header>
+    <h1 class="title">Clínica MedSalud</h1>
+    <nav class="nav1">
+      <ul class="nav">
+        <li><a href=""><i class="fa-solid fa-user "></i></a>
+          <ul>
+            <li><a href="">Iniciar Sesion</a></li>
+            <li><a href="">Registrarse</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <hr>
+    <nav class="flex-container">
+      <ul>
+        <li><a>Inicio</a></li>
+        <li><a>La clinica</a></li>
+        <li><a>Noticias</a></li>
+        <li><a>Situaciones de Emergencia</a></li>
+        <li><a href="../views/testDiagnostico.html">Test Diagnóstico</a></li>
+      </ul>
+    </nav>
+</header>
+    <div class="text1">Test Covid-19</div> 
+    <p class="parrafo1"><strong> En este espacio encontrará un test para saber si presenta los sintomas de Covid-19.</strong></p>
+    <div class="text2"><h2 class="subtitulo1">¿Qué es la Covid-19?</h2>
+    <p>La COVID-19 es la enfermedad causada por el nuevo coronavirus conocido como SARS-CoV-2. La OMS tuvo noticia por primera vez de la existencia de este nuevo virus el 31 de diciembre de 2019, al ser informada de un grupo de casos de «neumonía vírica» que se habían declarado en Wuhan (República Popular China). Fuente: Organización Mundial de la Salud (OMS).</p> 
+    </div>
+    <div class="form">
+        <h1 class="text3">Test</h1>
+        <form>
+        <h2 class="sintomas">Síntomas habituales</h2>
+        <br><legend class="legend">¿Ha presentado fiebre en los últimos 5 días?</legend>
+        <div class="div1"><label class="container"><div class="div2">Si</div> <input type="radio" name="fiebre" value="Si"><span class="checkmark"></span></label>
+            <label class="container"><div class="div2"> No </div> <input type="radio" name="fiebre" value="No"><span class="checkmark"></span></label>
+        </div>
+  
+        <legend class="legend">¿Ha presentado tos en los últimos 5 días?</legend>
+        <div class="div1"><label class="container"><div class="div2">Si</div> <input type="radio" name="tos" value="Si"><span class="checkmark"></span></label>
+            <label class="container"><div class="div2"> No </div> <input type="radio" name="tos" value="No"><span class="checkmark"></span></label>
+        </div> 
+ 
+        <legend class="legend">¿Se ha sentido cansado en los últimos 5 días?</legend>
+        <div class="div1"> <label class="container"><div class="div2">Si </div><input type="radio" name="cansancio" value="Si"><span class="checkmark"></span></label>
+            <label class="container"><div class="div2">No</div><input type="radio" name="cansancio" value="No"><span class="checkmark"></span></label>
+        </div>
+   
+        <legend class="legend">¿Ha perdido el gusto en los últimos 5 días?</legend>
+        <div class="div1"><label class="container"><div class="div2">Si</div><input type="radio" name="gusto" value="Si"><span class="checkmark"></span></label>
+            <label class="container"><div class="div2">No</div><input type="radio" name="gusto" value="No"><span class="checkmark"></span></label>
+        </div>
+     
+        <legend class="legend">¿Ha perdido el olfato en los últimos 5 días?</legend>
+        <div class="div1"><label class="container"><div class="div2">Si</div><input type="radio" name="olfato" value="Si"><span class="checkmark"></span></label>
+            <label class="container"><div class="div2">No</div><input type="radio" name="olfato" value="No"><span class="checkmark"></span></label>
+        </div>
+        <h2 class="sintomas">Síntomas menos habituales</h2>
+        <legend class="legend">¿Ha presentado dolor de garganta,dolor de cabeza, molestias, dolores, diarrea, ojos rojos o irritados en los ultimos 5 días?</legend>
+        <div class="div1"><label class="container"><div class="div2">Si</div><input type="radio" name="smh" value="Si"><span class="checkmark"></span></label>
+            <label class="container"><div class="div2">No</div><input type="radio" name="smh" value="No"><span class="checkmark"></span></label>
+        </div>
+        <h2 class="sintomas">Síntomas serios</h2>
+        <legend class="legend">Presenta dificultad para respirar o disnea, dolor en el pecho, pérdida de movilidad, del habla o sensación de confusión</legend>
+        <div class="div1"><label class="container"><div class="div2">Si</div><input type="radio" name="ss" value="Si"><span class="checkmark"></span></label>
+            <label class="container"><div class="div2">No</div><input type="radio" name="ss" value="No"><span class="checkmark"></span></label>
+        </div>
+
+        <input  type="button" id="boton"  class="lt" value="Aceptar">
+        <button type="button" id="boton2" class="lt">Validar</button>
+        <button type="submit" id="enviar" class="lt">Enviar</button>    
+    </div>
+    </form>
+    <script src="https://kit.fontawesome.com/9fd1a302e2.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c7e1a938a5.js" crossorigin="anonymous"></script>
+</body>
+</html>

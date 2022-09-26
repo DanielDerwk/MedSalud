@@ -1,61 +1,52 @@
 <!DOCTYPE html>
-<br lang="es">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="">
-    <title> Historial medico</title>
+    <link rel="stylesheet" href="./styless.css/styles..css">
+    
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <title> Historial médico</title>
 </head>
-<br>
-    <div  Class="box1">Historial Médica</div>
-    <div  class="text">Información Médica</div><br>
-  <br id="form">
+<body>
+    <div  Class="box1">Historial Médico</div>
+    <div class="text">Información Médica</div><br<br><br><br><br><br><br>
 
-
-    <label for="tipo de sangre">Tipo de sangre:</label>
+  <div> 
+    <form class="form">
+    <label for="tipo de sangre">Nombre completo del paciente</label>
     <input type="text"
-    minlength="1"
-    maxlength="3" 
-    pattern="[a-b-o]"
-    title= "solo se admite un signo">&nbsp;&nbsp;
+    minlength="3"
+    maxlength="50" 
+    placeholder="Nombres y apellidos"
+    title= "No se admite numero , debe ser a ,b ,o  y debe solo tener un signo"><br><br>
+    
 
-    <label for="Fecha">Fecha:</label>
-
-    <input type="date"  value ="2022-01-1"><br><br>
-
-    <label for="name">Nombre del paciente</label>
+    <label for="name">Tipo de sangre</label>
     <input type="text"
     id="name"
     name="name"
     value=""
-    placeholder="Nombre del paciente:" 
-    minlength="3"
-    maxlength="50"
-    pattern="[a-zA-Z]  { 3-20 }"
+    placeholder="Tipo de sangre:" 
+    minlength="1"
+    maxlength="3"
     title= "se admiten solo letras"
     autocomplete="off"
     required
-    >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <label for="Apellido">Apellidos(s):</label>
-    <input type="text"
-    id="Apellido"
-    Apellido="Apellido"
-    value=""
-    placeholder="Apellido(s)" 
-    minlength="3"
-    maxlength="50"
-    pattern="[a-zA-Z]  { 3,20 }"
-    title= "se admiten solo letras"
-    autocomplete="off"
-    required
-    >&nbsp;&nbsp;
+    ><br><br>
+
     <label for="age">Edad:</label>
-    <input type="number" min="1" max="99" id="age">&nbsp;&nbsp;
+    <input type="number" min="1" max="99" id="age"
+    required
+    ><br><br>
     <label for="Date of Birth:">Fecha de nacimiento:</label>
-    <input type="date"  value ="">&nbsp;&nbsp;
+    <input type="date"  value =""
+    required
+    ><br><br>
     <label for="city of birth">Lugar de nacimiento:</label>
-     <select id="city" name="city">
+     <select id="city" name="city"
+        required>
         <option value="">Bogota</option>
          <option value="">Cali</option>
          <option value="">Medellin</option>
@@ -64,55 +55,82 @@
           <option value="">Santa Marta</option>
           <option value="">Santa Marta</option>
           <option value="">Funza</option>
-
-     </select><br></br>&nbsp;&nbsp;
+     </select><br><br>
     <label for="Sexo:">Sexo:</label>
     <input type="radio" id="sexo" name="sexo" value="m"/>Masculino
-    <input type="radio" id="sexo" name="sexo" value="f"/>Femenino &nbsp;&nbsp;
-    <label for="identificación:">Identificación:</label>
-    <input type="radio" id="identificación" name="identificación"value="Ti"/>Ti
-    <input type="radio" id="identificación" name="identificación"value="Cc"/>Cc 
-    <input type="identificacion" id="Ti/Cc"
+    <input type="radio" id="sexo" name="sexo" value="f"/>Femenino <br><br>
+    <label for="Identificación:">Identificación:</label>
+    <input type="radio" id="identificación" name="identificación"value="Ti"/>TI
+    <input type="radio" id="identificación" name="identificación"value="Cc"/>CC 
+    <input type="radio" id="identificación" name="identificación"value="Cc"/>Pasaporte
+    <input type="Identificacion" id="TI/CC/Pasaporte"
     
     minlength="1"
     maxlength="11"
-    pattern="{ 1-10 }"
     title= "Numero de identificacion del tutor si es menor de edad "
-    autocomplete="off"
     required
-    >
+    placeholder="Identificación"
+    ><br><br>
     <label for="name">Celular:</label>
     <input type="tel"
-    id="Celular"
-    Celular="Celular"
+    id="celular"
+    name="celular"
     value=""
- 
     minlength="1"
     maxlength="10"
-    pattern="{ 1-10 }"
+    placeholder="Celular"
     title= "se admiten solo numeros "
-    autocomplete="off"
     required
-    >&nbsp;&nbsp;
+    ><br><br>
 
     <label for="home">Domicilio:</label>
     <input type="text"
-    ><br><br>&nbsp;&nbsp;
-    <label for="allergies">¿Usted tiene alguna alergia a algun alimento o medicamento?:</label>
+    placeholder="Domicilio"
+    ><br><br>
+    <label for="allergies">¿Usted tiene alguna alergia ?</label>
     <input type="radio" id="Alergias" name="allergies" value="si"/>Si &nbsp;
     <input type="radio" id="Alergias" name="allergies" value="si"/>No &nbsp;&nbsp;&nbsp;<br></br>
-    <label for="allergies">¿A cual?</label>
-    <input type="text"><br><br/>
-    <label for="height">¿Cual es su estatura?:</label>
-    <input type="text"><br><br/>
-    <label for="Weight">¿Cual es su peso?:</label>
-    <input type="text"><br><br/>
-
+    <label for="Alergias">¿A cúal?:</label>
+    <select id="Allergies" name="Alergias"
+       required>
+       <option value="">Acetaminofen</option>
+        <option value="">Naproxeno</option>
+        <option value="">Paracetamol</option>
+        <option value="">Piroxicam</option>
+         <option value="">Simvastatina</option>
+         <option value="">Alimentos</option>
+         <option value="">Otros</option>
+          </select
+    title= "se admiten solo letras "><br><br/>
+    <label for="height">¿Cúal es su estatura?:</label>
+    <input type="text"
+     title="solo se admiten numeros y coma"
+     pattern="{ 1-100:, }"
+     minlength="1"
+     maxlength="4"
+     required
+     ><br><br>
+    <label for="Weight">¿Cúal es su peso?:</label>
+    <input type="text"
+    minlength="1"
+    maxlength="2"
+    title="solo en kilos"
+    required
+    ><br><br/>
     <label for="medicines"> ¿Habitualmento toma algun medicamento?:</label>
     <input type="radio" id="medicinas" name="medicines" value="si"/>Si &nbsp;
-    <input type="radio" id="medicinas" name="medicines" value="si"/>No &nbsp;&nbsp;&nbsp;<br></br>
-    <label for="medicines">¿cual?</label>
-    <input type="text"
+    <input type="radio" id="medicinas" name="medicines" value="si"/>No &nbsp;<br></br>
+    
+    <label for="medicamentos">¿A cúal?:</label>
+    <select id="medicines" name="medicamentos"
+       required>
+       <option value="">omeprazol</option>
+        <option value="">Aspirinas</option>
+        <option value="">Paracetamol</option>
+        <option value="">Amlodipina</option>
+         <option value="">Simvastatina</option>
+         <option value="">Otros</option>
+          </select
      title= "solo llenar si tiene alguna alergia el medicamento y solo se permiten letras"><br>
      <label for="diseases">¿Usted padece de alguna enfermedad?:</label>
     <select name="Enfermedades"multiple>
@@ -125,24 +143,16 @@
     <option >Asma</option>
     </select><br></br>
      
-     <label for="medicines">Otra enfermedad::</label>
-     <input type="otras"
-     id="otras"><br></br>
-     
-
      <label for="discapacidad">¿Tiene usted alguna discapacidad?:</label>
      <input type="radio" id="Discapacidad" name="Discapacidad" value="si"/>Si &nbsp;
-    <input type="radio" id="discapacidad" name="Discapacidad" value="si"/>No &nbsp;&nbsp;<br></br>
-    <label for="discapacidad">Alguna observación sobre su salud:</label>
-    <input type="text"><br></br>
-    
+    <input type="radio" id="Alergias" name="Discapacidad" value="si"/>No &nbsp;&nbsp;<br></br>
+  
     <button type="submit" id="enviar" >Enviar datos</button>
-
-
-
-
-
+  
   </form>
- 
 </body>
+
+
+
 </html>
+
