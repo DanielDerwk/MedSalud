@@ -35,14 +35,15 @@ header .nav li{
     right: 10vw;
 }
 .fa-user{ /*icon usuario*/
-    font-size: 2.6vw;
+    font-size: 2vw;
 }
 ul, ol{
     list-style: none; /*borra lo signos de la lista*/
 }
+
 .nav li a{
-    width: 4.4vw;
-    height: 4.4vw;
+    width: 4vw;
+    height: 4vw;
     background-color: #AF98C4;
     border-radius: 50%;
     color: #F8F4F1;
@@ -65,9 +66,9 @@ ul, ol{
     display: block;
     border-radius: 10px;
     background-color: #AF98C4;
-    font-size: 1.8vw;
-    width: 12vw;
-    height: 3.8vw;
+    font-size: 1vw;
+    width: calc(8vw + 2vh);
+    height: calc(2vw + 0.8vh);
     position: relative;
     text-align: center;
     padding: 0.5vw 0;
@@ -78,7 +79,7 @@ ul, ol{
     flex-direction: column;
     align-items: center;
     left: 15vw;
-    bottom: -1.8vw;
+    bottom: -0.6vw;
 }
 hr{
     height: 1px;

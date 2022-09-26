@@ -1,0 +1,262 @@
+*{
+
+    padding: 0;
+
+    margin: 0;
+
+    font-family:'Poppins', sans-serif ;
+
+    }
+
+
+.header{
+
+    width: 100%;
+
+    height: calc(100vh-200px);   
+
+    background-color: #171716;
+
+    background-image: linear-gradient(50deg,#624f6741 60%,#5f5656ad), url(../img/national-cancer-institute-fTQHPb6r4wQ-unsplash.jpg);
+
+    background-repeat: no-repeat;
+
+    background-size: cover;    
+
+    background-attachment: fixed;
+
+    background-position: center;    
+
+    padding: 0.1px; 
+
+
+
+}    
+
+    
+
+.butonCita{
+
+    text-align: center;
+
+    background-color:#DEDAD7;
+
+    border: 0px;
+
+    padding: 3px 10px ;
+
+    font-family: 'Poppins', sans-serif;
+
+    color: #171716;
+
+    margin:15px ;
+
+    
+
+}
+
+    
+
+.c1{
+
+    text-align: center;
+
+    background-color: #af98c4;
+
+    font-family:'Poppins', sans-serif ;
+
+    color: #171716;
+
+    margin: 10vh 10vw ;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+}
+
+.nom{
+
+    border: 0px;
+
+    padding: 4px;
+
+    font-family: 'Poppins', sans-serif;
+
+    text-align: left;
+
+    position: relative;
+
+    right: 15px;
+
+}
+
+
+.ndp{
+
+    padding: 10px;
+
+    font-family:'Poppins', sans-serif ;
+
+    text-align: left;
+
+    margin: 0px;
+
+    color: #171716;
+
+}
+
+
+.edad{
+
+    padding: 100px;
+
+    font-family:'Poppins', sans-serif ;
+
+    text-align: left;
+
+    margin: 0px;
+
+    color: #171716;
+
+
+}
+
+
+.ndt{
+
+    padding: 0px;
+
+    font-family:'Poppins', sans-serif ;
+
+    text-align: left;
+
+    margin: 0px;
+
+    color: #171716;
+
+    
+
+}
+
+
+.ce{
+
+    padding: 10px;
+
+    font-family:'Poppins', sans-serif ;
+
+    text-align: left;
+
+    margin: 0px;
+
+    color: #171716;
+
+
+}
+
+.sf{
+
+    padding: 100px;
+
+    font-family:'Poppins', sans-serif ;
+
+    text-align: left;
+
+    margin: 0px;
+
+    color: #171716;
+
+}
+
+
+.g{
+
+    padding: 5px;
+
+    font-family:'Poppins', sans-serif ;
+
+    text-align: left;
+
+    margin: 50px;
+
+    color: #171716;
+
+}
+
+
+.d{
+
+    padding: 100px;
+
+    font-family:'Poppins', sans-serif ;
+
+    text-align: left;
+
+    margin: 15px;
+
+    color: #171716;
+
+}
+
+
+.s{
+
+    padding: 100px;
+
+    font-family:'Poppins', sans-serif ;
+
+    text-align: left;
+
+    margin: 15px;
+
+    color: #171716;
+
+}
+
+
+.caja{
+
+    background-color: #af98c4;
+
+    padding: 5px;
+
+    border-radius: 10px;
+
+    margin: 10vh 10vw;
+
+    text-align: center;
+
+}
+
+
+.condicion{
+
+
+    padding: 100px;
+
+    font-family:'Poppins', sans-serif ;
+
+    text-align: left;
+
+    margin: 0px;
+
+    color: #171716;
+
+    
+
+}
+
+.oculto{
+
+    padding: 100px;
+
+    font-family:'Poppins', sans-serif ;
+
+    text-align: left;
+
+    margin: 0px;
+
+    color: #171716;
+
+}
